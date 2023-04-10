@@ -13,6 +13,9 @@ class LoginController
 {
     private $expireTime = 60*60*24;
     private $jwt_secret_key = 'theshy123';
+    public function test(){
+        return ajaxReturn('','',1112222);
+    }
     public function Login (Request $request) {
         $params = $request->param();
         $username = $params['username'];
