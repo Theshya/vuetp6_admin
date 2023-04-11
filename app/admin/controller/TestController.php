@@ -9,7 +9,7 @@ use think\facade\Filesystem;
 class TestController
 {
     public function test (Request $request) {
-   // echo 111;exit;
+        echo 111;exit;
         $res = Db::table('test')->select();
 
         return ajaxReturn('aaa','',$res);
